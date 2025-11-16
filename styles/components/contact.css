@@ -1,0 +1,119 @@
+/* Contact Section */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    max-width: 1000px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.15rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-grey);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    border-bottom-color: var(--black);
+    padding-left: 10px;
+}
+
+.contact-item i {
+    width: 24px;
+    text-align: center;
+    color: var(--black);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid var(--border-grey);
+    background-color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--black);
+    box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+}
+
+.submit-btn {
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 8px;
+    align-self: flex-start;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-grey);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(26, 26, 26, 0.2);
+}
+
+/* Form Focus States */
+.form-group.focused::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--black);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.form-group.focused::after {
+    transform: scaleX(1);
+}
+
+/* Responsive Contact */
+@media (max-width: 968px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .contact-info {
+        order: 2;
+    }
+    
+    .contact-form {
+        order: 1;
+    }
+}

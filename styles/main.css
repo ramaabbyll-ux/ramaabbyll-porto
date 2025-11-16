@@ -1,0 +1,116 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none !important;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #1A1A1A;
+    --light-grey: #F5F5F5;
+    --border-grey: #E0E0E0;
+    --accent-grey: #666666;
+    --timeline-grey: #888888;
+    --sidebar-bg: #FAFAFA;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Main Content Styles */
+.main-content {
+    width: calc(100% - 280px);
+    margin-left: 280px;
+    padding: 0;
+}
+
+.section {
+    padding: 6rem 4rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    position: relative;
+    letter-spacing: -0.5px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--black);
+    transition: width 0.6s ease;
+}
+
+.section:hover .section-title::after {
+    width: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-content {
+        width: calc(100% - 250px);
+        margin-left: 250px;
+    }
+    
+    .section {
+        padding: 5rem 3rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .section {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+}

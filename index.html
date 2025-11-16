@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rama - Data Analyst</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/nav.css">
+    <link rel="stylesheet" href="styles/components/hero.css">
+    <link rel="stylesheet" href="styles/components/about.css">
+    <link rel="stylesheet" href="styles/components/journey.css">
+    <link rel="stylesheet" href="styles/components/projects.css">
+    <link rel="stylesheet" href="styles/components/skills.css">
+    <link rel="stylesheet" href="styles/components/contact.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    
+    <div class="container">
+
+
+
+
+
+
+
+        <!-- Navigation Sidebar -->
+        <aside class="sidebar" id="sidebar">
+                        <div class="sidebar-content">
+                <div class="profile-info">
+                    <h1 class="name">Abdurrahim Idin</h1>
+                    <p class="title">Data Analyst</p>
+                </div>
+                
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About Me</a></li>
+                        <li><a href="#journey" class="nav-link">My Journey</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="sidebar-footer">
+                    <div class="social-icons">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="#" class="download-cv">Download CV</a>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+
+
+            
+
+            <!-- Hero Section -->
+            <section id="home" class="section hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Hi, I'm Rama.<br>A Data Analyst</h1>
+                        <p class="hero-description">I transform complex data into reduced insights, driving informed decisions and growth.</p>
+                    </div>
+                    <div class="hero-animation">
+                        <div id="animation-canvas-container"></div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span>Scroll to explore</span>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <!-- About Me Section -->
+            <section id="about" class="section about-section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>Detail-oriented Computer Science student from IPB University with a strong foundation in machine learning, data analysis, and end-to-end project development.</p>
+                        <p>Experienced in building automated data processing pipelines, developing deep learning models, and utilizing tools like Google BigQuery and TensorFlow.</p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Abdurrahim Ramadhan Idin</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Degree:</span>
+                                <span class="info-value">Bachelor of Computer Science</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">ramaabbyll@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- My Journey Section -->
+            <section id="journey" class="section journey-section">
+                <h2 class="section-title">My Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="company">Matchmade.io</h3>
+                            <p class="role">Data Analyst (Data Modeller)</p>
+                            <p class="duration">Apr 2025 – Present</p>
+                            <ul class="description">
+                                <li>Engineered an end-to-end automated reconciliation pipeline, significantly reducing manual processing time for B2B clients.</li>
+                                <li>Analyzed complex transactional data from diverse sources including POS, payment switchers, and banking records.</li>
+                                <li>Developed automated reconciliation pipelines for retail and fintech clients using advanced SQL in Google BigQuery.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="company">Braincore.id</h3>
+                            <p class="role">Machine Learning Engineer Intern</p>
+                            <p class="duration">Sep 2024 – Nov 2024</p>
+                            <ul class="description">
+                                <li>Developed and optimized a computer vision model for a liveness detection project, deploying it in TensorFlow Lite.</li>
+                                <li>Built a data preprocessing pipeline to collect and ensure the quality of a large-scale image dataset.</li>
+                                <li>Collaborated with the engineering team to test, evaluate, and document model performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="company">IPB University</h3>
+                            <p class="role">Bachelor of Computer Science</p>
+                            <p class="duration">Aug 2021 – Mei 2025</p>
+                            <ul class="description">
+                                <li>CGPA: 3.78 / 4.00</li>
+                                <li>Final Project Research: Corn Varieties Identification using Convolutional Neural Network (CNN)</li>
+                                <li>Relevant Coursework: Data Mining, Artificial Intelligence, Statistics and Data Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects-section">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">Ram-AI: LLM-Powered Website Generator</h3>
+                        <p class="project-description">Developed a web application that converts text prompts into complete HTML, CSS, and JavaScript websites using the Gemini LLM API.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Google Gemini API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3 class="project-title">Plant Detection CNN</h3>
+                        <p class="project-description">Built and trained a CNN model in TensorFlow to identify four plant types (corn, cotton, rice, wheat) with 90% accuracy.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Keras</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3 class="project-title">Bee Subspecies Detection CNN</h3>
+                        <p class="project-description">Developed a CNN model to classify bee subspecies, achieving 81% accuracy to aid in ecological categorization.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3 class="project-title">Tweet Sentiment Analysis</h3>
+                        <p class="project-description">Performed sentiment analysis on Indonesian election debate tweets using a Naive Bayes algorithm, achieving 72% model accuracy.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">NLTK</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Skills Section -->
+            <section id="skills" class="section skills-section">
+                                <h2 class="section-title">Skills</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3 class="skills-category-title">Technical Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python, R, SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Tableau, Power BI</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Excel, Jupyter</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">AWS, Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="skills-category-title">Data Science & ML</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Machine Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">NLP & Computer Vision</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Deep Learning (CNN)</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Statistical Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="skills-category-title">Soft Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Communication</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Critical Thinking</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Problem Solving</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Team Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ramaabbyll@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 821 4772 6866</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bogor, Indonesia</span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            
+        </main>
+    </div>
+
+
+
+
+
+    <!-- JavaScript Files -->
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/components/nav.js"></script>
+    <script src="scripts/components/hero.js"></script>
+    <script src="scripts/components/about.js"></script>
+    <script src="scripts/components/journey.js"></script>
+    <script src="scripts/components/projects.js"></script>
+    <script src="scripts/components/skills.js"></script>
+    <script src="scripts/components/contact.js"></script>
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
